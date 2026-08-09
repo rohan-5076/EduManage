@@ -1,0 +1,264 @@
+/* ==============================
+   Fees Page
+============================== */
+
+.fees-page{
+    padding:24px;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+/* ==============================
+   Header
+============================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.page-header h2{
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.page-header p{
+    color:#64748b;
+    margin:0;
+}
+
+.page-header span{
+    color:#2563eb;
+    font-weight:600;
+}
+
+/* ==============================
+   Dashboard Cards
+============================== */
+
+.dashboard-card{
+    background:#fff;
+    border-radius:18px;
+    padding:22px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    height:100%;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-6px);
+}
+
+.dashboard-icon{
+    width:65px;
+    height:65px;
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:28px;
+}
+
+.dashboard-card small{
+    color:#64748b;
+}
+
+.dashboard-card h3{
+    margin:3px 0;
+    font-size:28px;
+    font-weight:700;
+}
+
+.dashboard-card span{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+/* ==============================
+   Card
+============================== */
+
+.fee-card{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.fee-card .card-header{
+    padding:24px;
+}
+
+.fee-card .card-body{
+    padding:30px;
+}
+
+/* ==============================
+   Inputs
+============================== */
+
+.custom-input{
+    height:48px;
+    border-radius:10px;
+}
+
+.custom-input:focus,
+.form-control:focus,
+.form-select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 .15rem rgba(37,99,235,.15);
+}
+
+textarea{
+    resize:none;
+    border-radius:10px !important;
+}
+
+/* ==============================
+   Switch
+============================== */
+
+.form-switch .form-check-input{
+    width:55px;
+    height:28px;
+    cursor:pointer;
+}
+
+/* ==============================
+   Buttons
+============================== */
+
+.btn{
+    border-radius:10px;
+    font-weight:600;
+    padding:10px 20px;
+}
+
+/* ==============================
+   Gradient Colors
+============================== */
+
+.bg-primary{
+    background:linear-gradient(135deg,#2563eb,#3b82f6)!important;
+}
+
+.bg-success{
+    background:linear-gradient(135deg,#16a34a,#22c55e)!important;
+}
+
+.bg-warning{
+    background:linear-gradient(135deg,#f59e0b,#fbbf24)!important;
+}
+
+.bg-danger{
+    background:linear-gradient(135deg,#dc2626,#ef4444)!important;
+}
+
+/* ==============================
+   Summary Box
+============================== */
+
+.summary-box{
+    background:#eff6ff;
+    border:1px solid #bfdbfe;
+    border-radius:15px;
+    padding:20px;
+    margin-top:25px;
+}
+
+.summary-box h5{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.summary-item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.summary-item:last-child{
+    margin-bottom:0;
+}
+
+.summary-total{
+    border-top:1px solid #dbeafe;
+    margin-top:15px;
+    padding-top:15px;
+    font-weight:700;
+    font-size:18px;
+}
+
+/* ==============================
+   Responsive
+============================== */
+
+@media(max-width:768px){
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .fee-card .card-body{
+        padding:20px;
+    }
+
+}
+/* Filter Card */
+
+.filter-card{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+/* Status Badge */
+
+.status{
+    padding:6px 14px;
+    border-radius:25px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status.paid{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status.overdue{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* Table */
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* Pagination */
+
+.pagination .page-link{
+    border-radius:8px;
+    margin:0 2px;
+}   

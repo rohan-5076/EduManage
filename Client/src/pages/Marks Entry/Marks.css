@@ -1,0 +1,14 @@
+.marks-page{
+    padding:24px;
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+.form-control{
+    min-width:90px;
+}
+
+.badge{
+    padding:7px 14px;
+    font-size:13px;
+}

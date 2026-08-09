@@ -1,0 +1,155 @@
+.dashboard-navbar {
+    height: 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Sidebar Button */
+
+.sidebar-toggle {
+    font-size: 22px;
+    border: none;
+    background: transparent;
+}
+
+/* Search */
+
+.search-box {
+    width: 300px;
+    height: 45px;
+    background: #f8fafc;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box input {
+    background: transparent;
+    box-shadow: none;
+}
+
+.search-icon {
+    color: #64748b;
+    margin-right: 10px;
+}
+
+/* Icons */
+
+.icon-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #f1f5f9;
+    border-radius: 12px;
+    position: relative;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.icon-btn:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.badge-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile */
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    font-size: 42px;
+    color: #2563eb;
+}
+
+.profile-box h6 {
+    margin: 0;
+    font-weight: 600;
+}
+.profile-btn{
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .dashboard-navbar{
+        padding:0 15px!important;
+    }
+
+    .search-box{
+        display:none!important;
+    }
+
+}
+.profile-wrapper{
+    position:relative;
+}
+
+/* .profile-card{
+    
+    position:absolute;
+    top:70px;
+    right:0;
+    width:260px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    padding:20px;
+    z-index:9999;
+    text-align:center;
+    animation:fade .2s ease;
+} */
+
+.profile-card-icon{
+    font-size:60px;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.profile-card h5{
+    margin-bottom:5px;
+    font-weight:700;
+}
+
+.profile-card p{
+    color:#6c757d;
+    margin-bottom:20px;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

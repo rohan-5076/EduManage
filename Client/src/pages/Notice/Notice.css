@@ -1,0 +1,52 @@
+.filter-card{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.priority,
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.priority.high{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.priority.medium{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.priority.low{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.active{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.status.expired{
+    background:#f3f4f6;
+    color:#6b7280;
+}
+
+.status.draft{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}

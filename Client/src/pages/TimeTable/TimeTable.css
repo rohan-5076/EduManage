@@ -1,0 +1,266 @@
+/* ===========================
+   Timetable Page
+=========================== */
+
+.timetable-page{
+
+    padding:20px;
+
+}
+
+/* ===========================
+   Today's Schedule
+=========================== */
+
+.schedule-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:20px;
+
+    border:1px solid #edf1f7;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+}
+
+.schedule-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.schedule-item:hover{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+
+}
+
+.schedule-item.active{
+
+    border-left:5px solid #0d6efd;
+
+    background:#f8fbff;
+
+}
+
+.schedule-item.break{
+
+    background:#f8f9fa;
+
+}
+
+/* ===========================
+   Time
+=========================== */
+
+.schedule-time{
+
+    width:170px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    color:#495057;
+
+}
+
+/* ===========================
+   Content
+=========================== */
+
+.schedule-content{
+
+    flex:1;
+
+}
+
+.schedule-content h6{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.schedule-meta{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    color:#6c757d;
+
+    font-size:14px;
+
+}
+
+.schedule-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.schedule-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.schedule-time{
+
+    width:auto;
+
+}
+
+.schedule-meta{
+
+    gap:12px;
+
+    flex-direction:column;
+
+}
+
+}
+/* ===========================
+   Weekly Timetable
+=========================== */
+
+.timetable-table{
+
+    margin-bottom:0;
+
+}
+
+.timetable-table th{
+
+    background:#f8f9fc;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#495057;
+
+    padding:16px;
+
+    white-space:nowrap;
+
+}
+
+.timetable-table td{
+
+    padding:12px;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+.time-slot{
+
+    width:95px;
+
+    font-weight:600;
+
+    color:#6c757d;
+
+    font-size:13px;
+
+}
+
+.subject-box{
+
+    background:#f8fbff;
+
+    border:1px solid #e5eefb;
+
+    border-radius:12px;
+
+    padding:12px 8px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    min-height:72px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.subject-box:hover{
+
+    background:#eaf4ff;
+
+    border-color:#0d6efd;
+
+    transform:translateY(-2px);
+
+}
+
+.subject-box h6{
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.subject-box small{
+
+    color:#6c757d;
+
+    margin-top:4px;
+
+}
+
+.break-row td{
+
+    background:#f8f9fa;
+
+    font-weight:600;
+
+    color:#6c757d;
+
+}

@@ -1,0 +1,197 @@
+.dashboard-page {
+    padding: 25px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+/* ======================
+   Dashboard Cards
+====================== */
+
+.dashboard-card {
+    border-radius: 18px;
+    transition: all .3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.12) !important;
+}
+
+/* ======================
+   Statistics Icon
+====================== */
+
+.icon-box {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    transition: .3s;
+}
+
+.dashboard-card:hover .icon-box {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+/* ======================
+   Card Typography
+====================== */
+
+.dashboard-card small {
+    font-size: 14px;
+}
+
+.dashboard-card h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.dashboard-card h5 {
+    font-weight: 600;
+}
+
+/* ======================
+   Progress
+====================== */
+
+.progress {
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 50px;
+}
+
+/* ======================
+   Chart Placeholder
+====================== */
+
+.chart-placeholder {
+    height: 320px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================
+   Attendance Card
+====================== */
+
+.attendance-icon {
+    font-size: 60px;
+    color: #198754;
+}
+
+/* ======================
+   Semester Progress
+====================== */
+
+.semester-progress h2 {
+    font-size: 36px;
+    color: #0d6efd;
+}
+
+/* ======================
+   Buttons
+====================== */
+
+.btn-primary {
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media (max-width:991px){
+
+.dashboard-page{
+    padding:20px;
+}
+
+.dashboard-card{
+    margin-bottom:20px;
+}
+
+}
+
+@media (max-width:768px){
+
+.dashboard-page{
+    padding:15px;
+}
+
+.dashboard-card h3{
+    font-size:26px;
+}
+
+.icon-box{
+    width:55px;
+    height:55px;
+    font-size:22px;
+}
+
+}
+/* ==========================
+   Classes
+========================== */
+
+.class-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.class-item h6{
+    font-weight:600;
+}
+
+.list-group-item{
+    border:none;
+    padding:15px 0;
+}
+
+.list-group-item:not(:last-child){
+    border-bottom:1px solid #ececec;
+}
+/* ==============================
+   Notice Section
+============================== */
+
+.notice-item{
+    transition:.3s;
+    cursor:pointer;
+}
+
+.notice-item:hover{
+    transform:translateX(8px);
+}
+
+.notice-item h6{
+    font-weight:600;
+}
+
+/* ==============================
+   Table
+============================== */
+
+.table th{
+    font-weight:600;
+}
+
+.table td{
+    vertical-align:middle;
+}

@@ -1,0 +1,371 @@
+/* ===========================
+   Settings Page
+=========================== */
+
+.settings-page{
+
+    padding:20px;
+
+}
+
+/* ===========================
+   Account Card
+=========================== */
+
+.account-card{
+
+    border-radius:18px;
+
+}
+
+.account-card .card-body{
+
+    padding:35px;
+
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+.profile-avatar{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:48px;
+
+}
+
+/* ===========================
+   Info Box
+=========================== */
+
+.info-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    border:1px solid #edf1f7;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.info-box:hover{
+
+    border-color:#0d6efd;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.info-icon{
+
+    font-size:24px;
+
+    min-width:28px;
+
+}
+
+.info-box small{
+
+    color:#6c757d;
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+.info-box h6{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.account-card .border-end{
+
+    border-right:none !important;
+
+    border-bottom:1px solid #eee;
+
+    padding-bottom:25px;
+
+    margin-bottom:25px;
+
+}
+
+}
+/* ===========================
+   Preference Card
+=========================== */
+
+.preference-card{
+
+    border-radius:18px;
+
+}
+
+.preference-card .card-body{
+
+    padding:30px;
+
+}
+
+/* ===========================
+   Setting Item
+=========================== */
+
+.setting-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    border:1px solid #edf1f7;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+    min-height:90px;
+
+}
+
+.setting-item:hover{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.setting-item h6{
+
+    font-weight:600;
+
+}
+
+.setting-item small{
+
+    display:block;
+
+    max-width:260px;
+
+}
+
+/* Switch */
+
+.form-check-input{
+
+    width:50px;
+
+    height:26px;
+
+    cursor:pointer;
+
+}
+
+/* Select */
+
+.setting-select{
+
+    width:170px;
+
+    border-radius:10px;
+
+    box-shadow:none;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.setting-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.setting-select{
+
+    width:100%;
+
+}
+
+}
+/* ===========================
+   Security Card
+=========================== */
+
+.security-card{
+
+    border-radius:18px;
+
+}
+
+.security-card .card-body{
+
+    padding:30px;
+
+}
+
+/* ===========================
+   Security Items
+=========================== */
+
+.security-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.security-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    border:1px solid #edf1f7;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+}
+
+.security-item:hover{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+.security-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.security-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:20px;
+
+    flex-shrink:0;
+
+}
+
+.security-item h6{
+
+    margin-bottom:4px;
+
+    font-weight:600;
+
+}
+
+.security-item .btn{
+
+    min-width:46px;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.security-item{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.security-left{
+
+    width:100%;
+
+}
+
+.security-item .btn{
+
+    width:100%;
+
+}
+
+}
