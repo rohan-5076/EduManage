@@ -74,9 +74,8 @@ EduManage is designed to manage students, teachers, courses, subjects, attendanc
 ### AI
 - Gemini API
 - Groq API
-
+   
 ## 📁 Project Structure
-
 ```text
 EduManage/
 │
@@ -100,3 +99,9 @@ EduManage/
 │
 ├── .gitignore
 └── README.md
+```
+## To Start 
+   Client : run 'npm start' command
+   Server : run 'npx nodemon' command
+   
+
