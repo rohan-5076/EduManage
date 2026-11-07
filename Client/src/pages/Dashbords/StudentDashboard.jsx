@@ -48,7 +48,7 @@ function StudentDashboard() {
 
           <p className="text-muted mb-0">
             Welcome back,
-            <strong className="ms-1">Rohan 👋</strong>
+            <strong className="ms-1">Rohan </strong>
           </p>
         </div>
 
@@ -88,19 +88,86 @@ function StudentDashboard() {
         {/* Performance */}
 
         <div className="col-lg-8">
-          <div className="card border-0 shadow-sm dashboard-card h-100">
-            <div className="card-body">
-              <h5 className="fw-semibold mb-4">Academic Performance</h5>
+          <div className="bg-light rounded p-4" style={{ height: "320px" }}>
+            <h5 className="fw-semibold mb-4">Student Performance</h5>
 
-              <div
-                className="bg-light rounded d-flex flex-column justify-content-center align-items-center"
-                style={{ height: "320px" }}
-              >
-                <FaChartLine size={60} className="text-primary mb-3" />
+            <div
+              className="d-flex align-items-end justify-content-around"
+              style={{ height: "220px" }}
+            >
+              {/* Sem 1 */}
+              <div className="text-center">
+                <div
+                  className="bg-primary rounded-top"
+                  style={{
+                    width: "45px",
+                    height: "100px",
+                  }}
+                ></div>
 
-                <h4 className="text-secondary">
-                  Performance Chart Coming Soon
-                </h4>
+                <div className="mt-2 text-muted small">Sem 1</div>
+
+                <div className="fw-semibold">7.8</div>
+              </div>
+
+              {/* Sem 2 */}
+              <div className="text-center">
+                <div
+                  className="bg-primary rounded-top"
+                  style={{
+                    width: "45px",
+                    height: "130px",
+                  }}
+                ></div>
+
+                <div className="mt-2 text-muted small">Sem 2</div>
+
+                <div className="fw-semibold">8.2</div>
+              </div>
+
+              {/* Sem 3 */}
+              <div className="text-center">
+                <div
+                  className="bg-primary rounded-top"
+                  style={{
+                    width: "45px",
+                    height: "155px",
+                  }}
+                ></div>
+
+                <div className="mt-2 text-muted small">Sem 3</div>
+
+                <div className="fw-semibold">8.6</div>
+              </div>
+
+              {/* Sem 4 */}
+              <div className="text-center">
+                <div
+                  className="bg-primary rounded-top"
+                  style={{
+                    width: "45px",
+                    height: "175px",
+                  }}
+                ></div>
+
+                <div className="mt-2 text-muted small">Sem 4</div>
+
+                <div className="fw-semibold">8.9</div>
+              </div>
+
+              {/* Sem 5 */}
+              <div className="text-center">
+                <div
+                  className="bg-primary rounded-top"
+                  style={{
+                    width: "45px",
+                    height: "190px",
+                  }}
+                ></div>
+
+                <div className="mt-2 text-muted small">Sem 5</div>
+
+                <div className="fw-semibold">9.1</div>
               </div>
             </div>
           </div>

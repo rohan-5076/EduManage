@@ -1,5 +1,6 @@
 const Teacher = require("../models/Teacher");
 const Student = require("../models/Student");
+
 const jwt = require("jsonwebtoken");
 
 // Teacher Login
@@ -56,8 +57,8 @@ const studentLogin = async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    const student = await Student.findOne({ username });
-
+const student = await Student.findOne({ username })
+  .populate("course", "courseName courseCode");
     if (!student) {
       return res.status(401).json({
         status: false,

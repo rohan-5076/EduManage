@@ -9,7 +9,7 @@ function AiChat() {
   const [messages, setMessages] = useState([
     {
       sender: "ai",
-      text: "Hello Admin 👋\n\nI can help you with:\n\n• Students\n• Courses\n• Attendance\n• Subjects\n• Reports",
+      text: "Hello Admin \n\nI can help you with:\n\n• Students\n• Courses\n• Attendance\n• Subjects\n• Reports",
     },
   ]);
 

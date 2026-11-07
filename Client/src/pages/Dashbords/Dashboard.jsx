@@ -1,4 +1,4 @@
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Dashboard.css";
 
@@ -15,48 +15,43 @@ import {
 import { MdAssignment, MdNotifications, MdPeople } from "react-icons/md";
 
 function Dashboard() {
+  const [students, setStudents] = useState([]);
+  const [teachers, setTeachers] = useState([]);
+  const [courses, setCourses] = useState([]);
 
- const [students , setStudents] = useState([]);
- const [teachers , setTeachers] = useState([]);
- const [courses , setCourses] = useState([]);
+  const LoadCourses = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/api/courses");
+      setCourses(res.data.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
- const LoadCourses = async ()=>{
-  try{
-    const res = await axios.get("http://localhost:5000/api/courses");
-    setCourses(res.data.data);   
-  }catch(err){
-    console.log(err);
-  }
- }
-
- const LoadTeachers = async ()=>{
-   try{
+  const LoadTeachers = async () => {
+    try {
       const res = await axios.get("http://localhost:5000/api/teachers");
-        setTeachers(res.data.data);
-
-    }catch(err){
-      console.log(err)
+      setTeachers(res.data.data);
+    } catch (err) {
+      console.log(err);
     }
- }
+  };
 
- const LoadStudents = async ()=>{
-   try{
+  const LoadStudents = async () => {
+    try {
       const res = await axios.get("http://localhost:5000/api/students");
-        setStudents(res.data.data);
-        console.log(res.data.data)
-
-    }catch(err){
-      console.log(err)
+      setStudents(res.data.data);
+      console.log(res.data.data);
+    } catch (err) {
+      console.log(err);
     }
- }
+  };
 
-   useEffect(() => {
+  useEffect(() => {
     LoadStudents();
     LoadTeachers();
     LoadCourses();
   }, []);
-
- 
 
   const stats = [
     {
@@ -92,12 +87,10 @@ function Dashboard() {
       <div className="d-flex justify-content-between align-items-center mb-4">
         <div>
           <h2 className="fw-bold mb-1">Dashboard</h2>
-          <p className="text-muted mb-0">Welcome back, Admin 👋</p>
+          <p className="text-muted mb-0">Welcome back, Admin </p>
         </div>
 
-        <button className="btn btn-primary rounded-pill px-4">
-          + Add Student
-        </button>
+
       </div>
 
       {/* Statistics */}
@@ -128,18 +121,77 @@ function Dashboard() {
 
       <div className="row g-4 mt-1">
         <div className="col-lg-8">
-          <div className="card border-0 shadow-sm h-100 dashboard-card">
-            <div className="card-body">
-              <h5 className="fw-semibold mb-4">Student Growth</h5>
+          <div className="d-flex align-items-end justify-content-around h-75">
+  
+  {/* Students */}
+  <div className="text-center">
+    <div
+      className="bg-primary rounded-top"
+      style={{
+        width: "45px",
+        height: "100px",
+      }}
+    ></div>
 
-              <div
-                className="bg-light rounded d-flex justify-content-center align-items-center"
-                style={{ height: "320px" }}
-              >
-                <h4 className="text-secondary">📈 Chart Coming Soon</h4>
-              </div>
-            </div>
-          </div>
+    <small className="text-muted d-block mt-2">
+      Students
+    </small>
+
+    <div className="fw-semibold">10</div>
+  </div>
+
+  {/* Teachers */}
+  <div className="text-center">
+    <div
+      className="bg-success rounded-top"
+      style={{
+        width: "45px",
+        height: "40px",
+      }}
+    ></div>
+
+    <small className="text-muted d-block mt-2">
+      Teachers
+    </small>
+
+    <div className="fw-semibold">4</div>
+  </div>
+
+  {/* Courses */}
+  <div className="text-center">
+    <div
+      className="bg-warning rounded-top"
+      style={{
+        width: "45px",
+        height: "80px",
+      }}
+    ></div>
+
+    <small className="text-muted d-block mt-2">
+      Courses
+    </small>
+
+    <div className="fw-semibold">8</div>
+  </div>
+
+  {/* Subjects */}
+  <div className="text-center">
+    <div
+      className="bg-danger rounded-top"
+      style={{
+        width: "45px",
+        height: "60px",
+      }}
+    ></div>
+
+    <small className="text-muted d-block mt-2">
+      Departments
+    </small>
+
+    <div className="fw-semibold">6</div>
+  </div>
+
+</div>
         </div>
 
         <div className="col-lg-4">
@@ -156,8 +208,6 @@ function Dashboard() {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
 

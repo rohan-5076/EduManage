@@ -11,7 +11,7 @@ function ChatInput({ onSend, loading }) {
   };
 
   return (
-    <div className="input-group">s
+    <div className="input-group">
 
       <input
         type="text"

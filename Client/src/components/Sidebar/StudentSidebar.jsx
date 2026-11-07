@@ -115,10 +115,10 @@ function StudentSidebar() {
       <div className="sidebar-header">
         {!collapsed && (
           <div className="logo">
-            <div className="logo-icon">ES</div>
+            <div className="logo-icon">EM</div>
 
             <div>
-              <h5>EduStudent</h5>
+              <h5>EduManage</h5>
               <small>Student Portal</small>
             </div>
           </div>
@@ -198,7 +198,7 @@ function StudentSidebar() {
             <img
               src={
                 student?.profileImage ||
-                "https://i.pravatar.cc/150?img=15"
+                "https://i.pravatar.cc/155?img=12"
               }
               alt="Student"
             />
@@ -209,13 +209,14 @@ function StudentSidebar() {
                 {student?.fullName ||
                   student?.name ||
                   student?.username ||
-                  "Student"}
+                  "Rohan Patil"}
               </h6>
 
               <small>
-                {student?.course ||
+                {/* {student?.course ||
                   student?.department ||
-                  "Student"}
+                  "Student"} */}
+                  Student
               </small>
 
             </div>

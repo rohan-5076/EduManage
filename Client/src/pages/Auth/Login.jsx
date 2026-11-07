@@ -161,9 +161,7 @@ function Login() {
                   </span>
 
                   <h1>
-                    Student Management
-                    <br />
-                    System
+                    EduManage
                   </h1>
 
                   <div className="developer-card">

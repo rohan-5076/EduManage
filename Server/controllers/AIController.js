@@ -32,7 +32,7 @@ export const chat = async (req, res) => {
     if (greetings.some((greeting) => question.includes(greeting))) {
       return res.json({
         reply:
-          "Hello! 👋 I'm your Student Management System AI Assistant. How can I help you today?\n\nYou can ask me about:\n• Students\n• Teachers\n• Courses\n• Subjects\n• Attendance\n• Results",
+          "Hello!  I'm your Student Management System AI Assistant. How can I help you today?\n\nYou can ask me about:\n• Students\n• Teachers\n• Courses\n• Subjects\n• Attendance\n• Results",
       });
     }
 
@@ -40,12 +40,9 @@ export const chat = async (req, res) => {
     // STUDENT
     // ======================
 
-    if (
-      question.includes("student") ||
-      question.includes("students")
-    ) {
+    if (question.includes("student") || question.includes("students")) {
       const students = await Student.find()
-        .select("-password")
+         .select("-password -_id -studentId")
         .populate("course", "courseName courseCode");
 
       prompt = `You are an AI Assistant for Student Management System.
@@ -57,11 +54,7 @@ export const chat = async (req, res) => {
     // ======================
     // TEACHER
     // ======================
-
-    else if (
-      question.includes("teacher") ||
-      question.includes("teachers")
-    ) {
+    else if (question.includes("teacher") || question.includes("teachers")) {
       const teachers = await Teacher.find().select("-password");
 
       prompt = `You are an AI Assistant for Student Management System.
@@ -72,14 +65,10 @@ export const chat = async (req, res) => {
     // ======================
     // SUBJECT
     // ======================
-
-    else if (
-      question.includes("subject") ||
-      question.includes("subjects")
-    ) {
+    else if (question.includes("subject") || question.includes("subjects")) {
       const subjects = await Subject.find().populate(
         "courseId",
-        "courseName courseCode"
+        "courseName courseCode",
       );
 
       prompt = `You are an AI Assistant for Student Management System.
@@ -90,11 +79,7 @@ export const chat = async (req, res) => {
     // ======================
     // COURSE
     // ======================
-
-    else if (
-      question.includes("course") ||
-      question.includes("courses")
-    ) {
+    else if (question.includes("course") || question.includes("courses")) {
       const courses = await Course.find();
 
       prompt = `
@@ -114,7 +99,6 @@ ${message}
     // ======================
     // GENERAL
     // ======================
-
     else {
       return res.json({
         reply:

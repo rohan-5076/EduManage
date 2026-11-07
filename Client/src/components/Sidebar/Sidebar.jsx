@@ -45,7 +45,7 @@ function Sidebar() {
           name: "Students",
           path: "/students",
           icon: <FaUserGraduate />,
-          badge: 1250,
+          badge: 15,
         },
 
         {
@@ -111,10 +111,10 @@ function Sidebar() {
       <div className="sidebar-header">
         {!collapsed && (
           <div className="logo">
-            <div className="logo-icon">ES</div>
+            <div className="logo-icon">EM</div>
 
             <div>
-              <h5>EduStudent</h5>
+              <h5>EduManage</h5>
 
               <small>Management System</small>
             </div>
@@ -221,7 +221,7 @@ function Sidebar() {
       <div className="sidebar-footer">
         {!collapsed && (
           <div className="profile-card">
-            <img src="https://i.pravatar.cc/150?img=12" alt="" />
+            <img src="https://i.pravatar.cc/150?img=51" alt="" />
 
             <div>
               <h6>Admin</h6>

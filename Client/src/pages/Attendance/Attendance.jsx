@@ -386,7 +386,6 @@ function Attendance() {
 
                   <th>PRN</th>
 
-                  <th>Course</th>
 
                   <th>Email</th>
 
@@ -422,7 +421,6 @@ function Attendance() {
 
                       <td>{student.prn}</td>
 
-                      <td>{student.course?.courseName}</td>
 
                       <td>{student.email}</td>
 
