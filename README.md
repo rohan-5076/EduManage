@@ -101,7 +101,7 @@ EduManage/
 └── README.md
 ```
 ## To Start 
-   Client : run 'npm start' command
+   Client : run 'npm start' command |
    Server : run 'npx nodemon' command
    
 
